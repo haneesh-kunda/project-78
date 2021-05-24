@@ -1,0 +1,32 @@
+<html>
+  <Body>
+<img src="https://thumbs.dreamstime.com/z/family-values-flat-colorful-word-concept-banner-family-values-flat-colorful-word-concept-banner-joyful-people-kids-cartoon-175685685.jpg"
+style="width: 30%;" id="family_member_image" >
+<h4 id="family_member_name"></h4>
+<button onclick="update();">next</button>
+<script>
+          
+    var images =
+    ["https://i.pinimg.com/236x/34/25/9d/34259d8b6b60a94f5e43bde242ecc26e.jpg",
+    "https://st.depositphotos.com/1724125/2693/v/950/depositphotos_26930203-stock-illustration-cartoon-dad.jpg",
+  "https://image.shutterstock.com/image-vector/working-mom-260nw-158801603.jpg"];
+
+  var i=0;
+    var names=["Haneesh","Phanikumar","Sreedevi"];
+    function update()   
+  {
+      i++;
+      var number_of_family_member_in_array=3;
+if (i>number_of_family_member_in_array)
+{
+  i=0;
+}
+var updatedimage = images[i];
+var updatedname = names[i];
+document.getElementById("family_member_image").src = updatedimage;
+document.getElementById("family_member_name").innerHTML = updatedname;
+}
+    
+</script>
+  </Body>  
+</html> 
